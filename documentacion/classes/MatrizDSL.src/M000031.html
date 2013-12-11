@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head>
+  <title>execute (MatrizDSL)</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="../.././rdoc-style.css" type="text/css" media="screen" />
+</head>
+<body class="standalone-code">
+  <pre><span class="ruby-comment cmt"># File lib/modai_prct12/matrizDSL.rb, line 51</span>
+        <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">execute</span>
+                
+                <span class="ruby-comment cmt"># Comprobamos la validez de la operación</span>
+                <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@op</span> = <span class="ruby-value str">&quot;&amp;&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;La Operacion no es valida&quot;</span>
+                        <span class="ruby-keyword kw">return</span> <span class="ruby-value">0</span>
+                <span class="ruby-keyword kw">end</span>
+                
+                <span class="ruby-comment cmt"># Mostramos las matrices</span>
+                <span class="ruby-keyword kw">if</span> <span class="ruby-ivar">@matA</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span> <span class="ruby-keyword kw">and</span> <span class="ruby-ivar">@matB</span> <span class="ruby-operator">!=</span> <span class="ruby-keyword kw">nil</span>
+
+                        <span class="ruby-ivar">@matrizA</span> = <span class="ruby-value str">&quot;Matriz&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@claseMat</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.new(@matA)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Matriz A: #{@matA}&quot;</span>
+
+                        <span class="ruby-ivar">@matrizB</span> = <span class="ruby-value str">&quot;Matriz&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@claseMat</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.new(@matB)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-node">&quot;Matriz B: #{@matB}&quot;</span>                
+
+                        <span class="ruby-identifier">resultado</span> = <span class="ruby-ivar">@matrizA</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;.&quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@op</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;(&quot;</span>  <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@matrizB</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot;)&quot;</span>
+                        <span class="ruby-identifier">puts</span> <span class="ruby-value str">&quot;Resultado de la operacion ( &quot;</span> <span class="ruby-operator">+</span> <span class="ruby-ivar">@op_texto</span>.<span class="ruby-identifier">to_s</span> <span class="ruby-operator">+</span> <span class="ruby-value str">&quot; ): &quot;</span>                        
+                        <span class="ruby-identifier">resultado</span> = <span class="ruby-identifier">eval</span>(<span class="ruby-identifier">resultado</span>)
+<span class="ruby-comment cmt">#                        puts &quot;Resultado de la operacion ( &quot; + @op_texto.to_s + &quot; ): #{resultado}&quot;</span>
+
+                <span class="ruby-keyword kw">end</span>
+                
+        <span class="ruby-keyword kw">end</span></pre>
+</body>
+</html>

@@ -5,7 +5,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
-  <title>Class: MatrizDensa</title>
+  <title>Class: MatrizDispersa</title>
   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
   <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
@@ -50,13 +50,13 @@
         <table class="header-table">
         <tr class="top-aligned-row">
           <td><strong>Class</strong></td>
-          <td class="class-name-in-header">MatrizDensa</td>
+          <td class="class-name-in-header">MatrizDispersa</td>
         </tr>
         <tr class="top-aligned-row">
             <td><strong>In:</strong></td>
             <td>
-                <a href="../files/lib/modai_prct12/matrizDensa_rb.html">
-                lib/modai_prct12/matrizDensa.rb
+                <a href="../files/lib/modai_prct12/matrizDispersa_rb.html">
+                lib/modai_prct12/matrizDispersa.rb
                 </a>
         <br />
             </td>
@@ -81,7 +81,8 @@
   <div id="contextContent">
 
     <div id="description">
-      <h1>Clase de Matriz densa</h1>
+      <h1>La clase de Matriz dispersa,</h1>
+<h2>Una matriz se considerará dispersa si tiene más de un 60% de ceros.</h2>
 
     </div>
 
@@ -92,18 +93,16 @@
       <h3 class="section-bar">Methods</h3>
 
       <div class="name-list">
-      <a href="#M000032">*</a>&nbsp;&nbsp;
-      <a href="#M000029">+</a>&nbsp;&nbsp;
-      <a href="#M000031">-</a>&nbsp;&nbsp;
-      <a href="#M000030">/</a>&nbsp;&nbsp;
-      <a href="#M000036">coerce</a>&nbsp;&nbsp;
-      <a href="#M000037">encontrar</a>&nbsp;&nbsp;
-      <a href="#M000033">max</a>&nbsp;&nbsp;
-      <a href="#M000034">min</a>&nbsp;&nbsp;
-      <a href="#M000026">new</a>&nbsp;&nbsp;
-      <a href="#M000035">to_densa</a>&nbsp;&nbsp;
-      <a href="#M000028">to_f</a>&nbsp;&nbsp;
-      <a href="#M000027">to_s</a>&nbsp;&nbsp;
+      <a href="#M000038">*</a>&nbsp;&nbsp;
+      <a href="#M000036">+</a>&nbsp;&nbsp;
+      <a href="#M000037">-</a>&nbsp;&nbsp;
+      <a href="#M000042">coerce</a>&nbsp;&nbsp;
+      <a href="#M000039">max</a>&nbsp;&nbsp;
+      <a href="#M000040">min</a>&nbsp;&nbsp;
+      <a href="#M000033">new</a>&nbsp;&nbsp;
+      <a href="#M000041">to_densa</a>&nbsp;&nbsp;
+      <a href="#M000035">to_f</a>&nbsp;&nbsp;
+      <a href="#M000034">to_s</a>&nbsp;&nbsp;
       </div>
     </div>
 
@@ -148,12 +147,12 @@
     <div id="methods">
       <h3 class="section-bar">Public Class methods</h3>
 
-      <div id="method-M000026" class="method-detail">
-        <a name="M000026"></a>
+      <div id="method-M000033" class="method-detail">
+        <a name="M000033"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000026.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000026.html');return false;">
+          <a href="MatrizDispersa.src/M000033.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000033.html');return false;">
           <span class="method-name">new</span><span class="method-args">(matriz)</span>
           </a>
         </div>
@@ -165,27 +164,27 @@
 
       <h3 class="section-bar">Public Instance methods</h3>
 
-      <div id="method-M000032" class="method-detail">
-        <a name="M000032"></a>
+      <div id="method-M000038" class="method-detail">
+        <a name="M000038"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000032.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000032.html');return false;">
+          <a href="MatrizDispersa.src/M000038.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000038.html');return false;">
           <span class="method-name">*</span><span class="method-args">(o)</span>
           </a>
         </div>
       
         <div class="method-description">
-          <h2>Multiplicación de matrices</h2>
+          <h2>Producto de matrices</h2>
         </div>
       </div>
 
-      <div id="method-M000029" class="method-detail">
-        <a name="M000029"></a>
+      <div id="method-M000036" class="method-detail">
+        <a name="M000036"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000029.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000029.html');return false;">
+          <a href="MatrizDispersa.src/M000036.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000036.html');return false;">
           <span class="method-name">+</span><span class="method-args">(o)</span>
           </a>
         </div>
@@ -195,12 +194,12 @@
         </div>
       </div>
 
-      <div id="method-M000031" class="method-detail">
-        <a name="M000031"></a>
+      <div id="method-M000037" class="method-detail">
+        <a name="M000037"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000031.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000031.html');return false;">
+          <a href="MatrizDispersa.src/M000037.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000037.html');return false;">
           <span class="method-name">-</span><span class="method-args">(o)</span>
           </a>
         </div>
@@ -210,57 +209,27 @@
         </div>
       </div>
 
-      <div id="method-M000030" class="method-detail">
-        <a name="M000030"></a>
+      <div id="method-M000042" class="method-detail">
+        <a name="M000042"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000030.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000030.html');return false;">
-          <span class="method-name">/</span><span class="method-args">(o)</span>
-          </a>
-        </div>
-      
-        <div class="method-description">
-          <h2>Suma de matrices densa con dispersa (sobreescribimos el operador / como prueba)</h2>
-        </div>
-      </div>
-
-      <div id="method-M000036" class="method-detail">
-        <a name="M000036"></a>
-
-        <div class="method-heading">
-          <a href="MatrizDensa.src/M000036.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000036.html');return false;">
+          <a href="MatrizDispersa.src/M000042.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000042.html');return false;">
           <span class="method-name">coerce</span><span class="method-args">(other)</span>
           </a>
         </div>
       
         <div class="method-description">
-          <h2>El metodo <a href="MatrizDensa.html#M000036">coerce</a> para onvierte el valor especificado en el tipo especificado.</h2>
+          <h2>El metodo <a href="MatrizDispersa.html#M000042">coerce</a> para onvierte el valor especificado en el tipo especificado.</h2>
         </div>
       </div>
 
-      <div id="method-M000037" class="method-detail">
-        <a name="M000037"></a>
+      <div id="method-M000039" class="method-detail">
+        <a name="M000039"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000037.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000037.html');return false;">
-          <span class="method-name">encontrar</span><span class="method-args">() {|matriz[i][j]| ...}</span>
-          </a>
-        </div>
-      
-        <div class="method-description">
-          <h2>Devolvemos la posición del primer elemento cuyo cuadrado es mayor a 6</h2>
-        </div>
-      </div>
-
-      <div id="method-M000033" class="method-detail">
-        <a name="M000033"></a>
-
-        <div class="method-heading">
-          <a href="MatrizDensa.src/M000033.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000033.html');return false;">
+          <a href="MatrizDispersa.src/M000039.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000039.html');return false;">
           <span class="method-name">max</span><span class="method-args">()</span>
           </a>
         </div>
@@ -270,12 +239,12 @@
         </div>
       </div>
 
-      <div id="method-M000034" class="method-detail">
-        <a name="M000034"></a>
+      <div id="method-M000040" class="method-detail">
+        <a name="M000040"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000034.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000034.html');return false;">
+          <a href="MatrizDispersa.src/M000040.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000040.html');return false;">
           <span class="method-name">min</span><span class="method-args">()</span>
           </a>
         </div>
@@ -285,13 +254,13 @@
         </div>
       </div>
 
-      <div id="method-M000035" class="method-detail">
-        <a name="M000035"></a>
+      <div id="method-M000041" class="method-detail">
+        <a name="M000041"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000035.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000035.html');return false;">
-          <span class="method-name">to_densa</span><span class="method-args">(o)</span>
+          <a href="MatrizDispersa.src/M000041.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000041.html');return false;">
+          <span class="method-name">to_densa</span><span class="method-args">()</span>
           </a>
         </div>
       
@@ -300,12 +269,12 @@
         </div>
       </div>
 
-      <div id="method-M000028" class="method-detail">
-        <a name="M000028"></a>
+      <div id="method-M000035" class="method-detail">
+        <a name="M000035"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000028.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000028.html');return false;">
+          <a href="MatrizDispersa.src/M000035.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000035.html');return false;">
           <span class="method-name">to_f</span><span class="method-args">()</span>
           </a>
         </div>
@@ -315,12 +284,12 @@
         </div>
       </div>
 
-      <div id="method-M000027" class="method-detail">
-        <a name="M000027"></a>
+      <div id="method-M000034" class="method-detail">
+        <a name="M000034"></a>
 
         <div class="method-heading">
-          <a href="MatrizDensa.src/M000027.html" target="Code" class="method-signature"
-            onclick="popupCode('MatrizDensa.src/M000027.html');return false;">
+          <a href="MatrizDispersa.src/M000034.html" target="Code" class="method-signature"
+            onclick="popupCode('MatrizDispersa.src/M000034.html');return false;">
           <span class="method-name">to_s</span><span class="method-args">()</span>
           </a>
         </div>
